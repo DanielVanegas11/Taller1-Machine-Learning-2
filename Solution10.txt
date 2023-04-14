@@ -1,0 +1,1 @@
+LDA stands for Linear Discriminant Analysis. It's based on the statistical principles of Bayesian decision theory and assumes that the data follows a Gaussian distribution. It's useful for reducing the dimensionality of a dataset while still retaining as much class discriminatory information as possible.
