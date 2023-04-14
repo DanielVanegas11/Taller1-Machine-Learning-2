@@ -16,9 +16,10 @@ singular_values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 150, 200]
 # Iterar sobre los valores singulares
 for i, sv in enumerate(singular_values):
     # Aplicar SVD
-    svd = SVD(n_components=sv)
-    img_transformed = svd.fit_transform(img_gray)
-    img_reconstructed = svd.inverse_transform(img_transformed)
+    svd = SVD(n_vectors=sv)
+    svd.fit(img_gray)
+    img_transformed = svd.transform(img_gray)
+    img_reconstructed = svd.inverse_transform()
     
     # Plotear la imagen original y la transformada
     plt.subplot(3, 4, i+1)

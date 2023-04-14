@@ -4,7 +4,7 @@ import numpy as np
 def matrix() -> Tuple[dict, np.ndarray]:
     cols = int(input("Ingrese el número de columnas: "))
     rows = int(input("Ingrese el número de filas: "))
-    
+    #
     mat = np.random.rand(rows, cols)
     eigenvalues, eigenvectors = None, None
     if mat.shape[0] == mat.shape[1]:
