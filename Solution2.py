@@ -45,5 +45,9 @@ plt.imshow(cv2.cvtColor(imagenes.imagen_promedio, cv2.COLOR_BGR2GRAY))
 plt.title("Imagen promedio de rostros")
 plt.show()
 
+imagen_promedio_gris = cv2.cvtColor(imagenes.imagen_promedio, cv2.COLOR_BGR2GRAY)
+distancia = np.linalg.norm(imagen_promedio_gris.flatten() - daniel_gris.flatten())
+print("The Euclidean distance between the image of Daniel and the average face image is:", distancia)
+
 
 
