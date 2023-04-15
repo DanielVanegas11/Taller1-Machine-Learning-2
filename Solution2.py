@@ -41,7 +41,7 @@ plt.show()
 
 # Calcular y mostrar imagen promedio
 imagenes = Imagenes(all_images)
-plt.imshow(cv2.cvtColor(imagenes.imagen_promedio, cv2.COLOR_BGR2RGB))
+plt.imshow(cv2.cvtColor(imagenes.imagen_promedio, cv2.COLOR_BGR2GRAY))
 plt.title("Imagen promedio de rostros")
 plt.show()
 
